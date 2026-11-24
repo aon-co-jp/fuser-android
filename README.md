@@ -1,3 +1,5 @@
+> Latest translations / 翻訳の最新版: [0-LATEST-TRANSLATIONS.md](0-LATEST-TRANSLATIONS.md)
+
 # fuser-android
 
 **日本語**: [`fuser`](https://github.com/cberner/fuser) 0.18.0(MIT)を、Android(`target_os = "android"`)でもpure-rust実装でビルドできるようにしたフォークです。`open-raid-z`のFUSEマウント(`fuse_backend`)がAndroid向けに使います。変更は「`target_os = "linux"`のゲートを`linux`または`android`へ広げる」ことと、bionic libcで`RENAME_*`がi32型になる差を`as u32`で吸収することだけです(`build.rs`のpure-rust許可OS一覧への`android`追加を含む)。
